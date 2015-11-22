@@ -1,0 +1,135 @@
+.gradient {
+    border: 1px solid black;
+ 
+    -webkit-box-shadow: inset 0 1px 0px rgba(255,255,255,.2);
+    -moz-box-shadow: inset 0 1px 0px rgba(255,255,255,.2);
+    box-shadow: inset 0 1px 0px rgba(255,255,255,.2);
+    background: #494949; /* Old browsers */
+background: -webkit-linear-gradient(top, #494949 0%, #434242 31%, #393838 55%, #242323 83%, #1b1a1a 100%, #161515 100%, #0b0b0b 100%);
+ 
+    background: -moz-linear-gradient(top, #494949 0%, #434242 31%, #393838 55%, #242323 83%, #1b1a1a 100%, #161515 100%, #0b0b0b 100%);
+    background: -o-linear-gradient(top, #494949 0%, #434242 31%, #393838 55%, #242323 83%, #1b1a1a 100%, #161515 100%, #0b0b0b 100%);
+    background: -ms-linear-gradient(top, #494949 0%, #434242 31%, #393838 55%, #242323 83%, #1b1a1a 100%, #161515 100%, #0b0b0b 100%);
+    background: linear-gradient(top, #494949 0%, #434242 31%, #393838 55%, #242323 83%, #1b1a1a 100%, #161515 100%, #0b0b0b 100%); /* W3C */
+-image  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494949', endColorstr='#0b0b0b',GradientType=0 ); /* IE6-9 */
+}
+
+.player {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    width: 300px;
+    bottom: 10px;
+    width: 95%;
+ 
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 5px;
+}
+ 
+.button {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 5px;
+}
+ 
+#play {
+    background-position: 6px 5px;
+}
+ 
+#mute {
+    background-position: -63px 5px;
+}
+
+#muted {
+    background-position: -106px 5px;
+}
+
+#close {
+    background-position: -146px 5px;
+}
+
+.vertical_list {
+    //width:99%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border:1px solid #000000;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+}
+
+.radio_station_element {
+	background-color:#fcf4b5;
+	border:1px solid #000000;
+	//display:inline-block;
+	text-decoration:none;
+    width: calc(100% - 0px);
+    padding-top: 17px;
+    padding-right: 0;
+    padding-bottom: 17px;
+    padding-left: 31px;
+    text-align: left;
+    margin-bottom: 5px;
+    //-moz-border-radius:10px;
+	//-webkit-border-radius:10px;
+}
+
+.radio_station_element:hover {
+	background-color:#5cbf2a;
+}
+
+.radio_station_element:active {
+	position:relative;
+	top:1px;
+}
+
+.dab_controls {
+    border:1px solid #000000;
+    padding: 5px;
+    display: flex;
+    flex-flow: row nowrap; /* Align on the same line */
+}
+
+.dab_control_element {
+    height: 34px;
+    margin-right: 10px;
+}
+
+.dab_control_button {
+	background-color:#44c767;
+	border:1px solid #18ab29;
+	//display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	//padding:17px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.dab_control_button:hover {
+	background-color:#5cbf2a;
+}
+.dab_control_button:active {
+	position:relative;
+	top:1px;
+}
+
+#signal_led {
+    //width: 20px;
+    //height: 20px;
+}
+
+.dab_control_heading {
+    font-family:Arial;
+	font-size:16px;
+}

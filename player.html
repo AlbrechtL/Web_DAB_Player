@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="dab_player.css">
+    <script type="text/javascript" src="jsonrpcjs-0.1.8.js"></script>
+    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+    <h1>Web DAB Radio Player</h1>
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+    <div class="dab_controls">
+        <div class="dab_control_element">
+            <div class="dab_control_heading">Signal</div>
+            <canvas height="18" width="18" id="signal_led"></canvas>
+        </div>
+        
+        <div class="dab_control_element">
+            <div class="dab_control_heading">Duration</div>
+            <div>00:00:00</div>
+        </div>
+        
+        <div class="dab_control_element">
+            <div class="dab_control_heading">Status</div>
+            <div>Not Connected</div>
+        </div>
+
+        <button class="dab_control_button dab_control_element" id="scan_channels">Scan Channels</button>
+        
+        <button class="dab_control_button dab_control_element" id="add_element">Add Element</button>
+        <button class="dab_control_element dab_control_button" id="remove_element">Clear Channel List</button>
+        <button class="dab_control_element dab_control_button" id="get_channels">Get Channels</button>
+    </div>
+    
+    <h2>Radio Stations</h2>  
+    <div class="vertical_list" id="radio_station_list">
+    </div>
+    
+    <h2>DAB Information</h2>  
+    
+    <div class="player gradient">
+ 
+        <a class="button gradient" id="play" href="" title=""></a>
+        <a class="button gradient" id="mute" href="" title=""></a>
+        <a class="button gradient" id="muted" href="" title=""></a>
+        <a class="button gradient" id="close" href="" title=""></a>
+             
+    </div><!-- / player -->
+    
+    <!--<audio src="http://localhost:2346/11D/0xD394" controls autoplay>-->
+<!--
+<audio src="1.mp3" controls>
+    <p>Your browser does not support the audio element.</p>
+</audio>
+-->
+    
+</html>
+
+
+
